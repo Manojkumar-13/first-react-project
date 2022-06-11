@@ -1,10 +1,11 @@
 import React from 'react'
 
-const Book = () => {
-  const image = 'https://images-eu.ssl-images-amazon.com/images/I/51oHUvYzbsL._SY264_BO1,204,203,200_QL40_FMwebp_.jpg'
-  const title = 'The Theory of Everything'
-  const author = 'Stephen Hawking '
-  const price = '₹199'
+  const clickHandler = function(title){
+  alert(`${title} has been added`);
+};
+const Book = (props) => {
+  // object destructuring
+  const {image,title,author,price} = props.book;
   return(
     <div className="book" id='book'>
       <div className="book-img-container">
@@ -13,7 +14,12 @@ const Book = () => {
       <h2 className="book-title">{title}</h2>
       <h3 className="book-author">{author}</h3>
       <h4 className="book-price">{price}</h4>
+      <button
+      type='button'
+      onClick={() => clickHandler(title)}
+      >Add to cart</button>
+      <button> Buy</button>
     </div>
   );
-};
+  };
 export default Book

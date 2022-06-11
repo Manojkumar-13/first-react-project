@@ -5,6 +5,8 @@ import{fas} from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 library.add(fas);
 
+// function
+
 const Hero = () =>{
   return(
     <div>
@@ -34,7 +36,7 @@ const Nav = () => {
         <span className ="nav-icon">
         <FontAwesomeIcon icon="fa-solid fa-cart-plus" />
         </span>
-        <div className ="cart-items">0</div>
+        <div className ="cart-items"  id='cart'>0</div>
       </div>
     </div>
   </nav>
