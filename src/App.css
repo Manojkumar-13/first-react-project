@@ -31,6 +31,7 @@
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
     box-shadow: 0 0 20px #6c1c8b;
     z-index: 10;
     

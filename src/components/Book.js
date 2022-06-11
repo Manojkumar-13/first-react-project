@@ -1,7 +1,7 @@
 import React from 'react'
 
   const clickHandler = function(title){
-  alert(`${title} has been added`);
+  alert(`${title} has been added to your cart`);
 };
 const Book = (props) => {
   // object destructuring
